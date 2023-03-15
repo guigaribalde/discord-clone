@@ -1,5 +1,3 @@
-export default function Channels(){
-  return(
-      <div>asd</div>
-      )
+export default function Channels() {
+  return <div>asdasdasd</div>;
 }
