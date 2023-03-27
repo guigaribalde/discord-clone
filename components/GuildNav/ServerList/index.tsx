@@ -29,6 +29,7 @@ export default function ServerList({
       {guilds.map((guild) => (
         <Item
           key={guild.id}
+          id={guild.id}
           isActive={activeGuild === guild.id}
           onClick={() => {
             handleGuildClick(guild.id);

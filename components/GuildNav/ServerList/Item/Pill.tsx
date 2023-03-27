@@ -4,7 +4,11 @@ interface PillProps {
   isActive?: boolean;
 }
 
-export default function Pill({ hover, isVisible, isActive }: PillProps) {
+export default function Pill({
+  hover,
+  isVisible = false,
+  isActive = false,
+}: PillProps) {
   let heightStyle = "h-2";
   if (isActive) {
     heightStyle = "h-10";
@@ -23,8 +27,3 @@ export default function Pill({ hover, isVisible, isActive }: PillProps) {
     </div>
   );
 }
-
-Pill.defaultProps = {
-  isVisible: false,
-  isActive: false,
-};

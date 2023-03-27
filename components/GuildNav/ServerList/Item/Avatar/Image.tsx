@@ -11,7 +11,7 @@ interface AvatarImageProps {
 }
 
 export default function AvatarImage({
-  image,
+  image = undefined,
   name,
   backgroundColorStyle,
   roundedStyle,
@@ -52,7 +52,3 @@ export default function AvatarImage({
     />
   );
 }
-
-AvatarImage.defaultProps = {
-  image: undefined,
-};

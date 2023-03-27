@@ -11,11 +11,11 @@ interface AvatarProps {
 }
 
 export default function Avatar({
+  isActive = false,
+  isMouseDown = false,
+  image = undefined,
   hover,
-  image,
   name,
-  isActive,
-  isMouseDown,
 }: AvatarProps) {
   const roundedStyle = `transition-all duration-200 ease-in-out ${
     hover || isActive ? "rounded-2xl" : "rounded-3xl"
@@ -43,9 +43,3 @@ export default function Avatar({
     </div>
   );
 }
-
-Avatar.defaultProps = {
-  image: undefined,
-  isActive: false,
-  isMouseDown: false,
-};

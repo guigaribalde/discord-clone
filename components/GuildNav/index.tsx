@@ -5,6 +5,7 @@ import ServerList from "./ServerList";
 import ServerItem from "./ServerList/Item";
 import Separator from "./Separator";
 import YetiLogo from "../../assets/icons/yeti_logo.svg";
+import "react-tooltip/dist/react-tooltip.css";
 
 const guildsData = [
   {
@@ -74,6 +75,7 @@ export default function GuildNav() {
   return (
     <div className="bg-primary_dark-700 h-full pt-3 overflow-y-auto no-scrollbar w-[72px]">
       <ServerItem
+        id="0"
         isActive={activeGuild === "0"}
         onClick={() => {
           handleGuildClick("0");
